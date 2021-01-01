@@ -9,6 +9,9 @@ Table : Comparative Analysis of Classification Accuracy
 ||
 ||
 
+<br>
+
+Table : Loss Functin and Optimizer Equation
 | loss function | loss equation | Optimizer | Optimizer notation |
 |:---:|:---:|:---:|:---:|
 | MSE | <a href="https://www.codecogs.com/eqnedit.php?latex=\frac{1}{n}\sum_{1}^{n}\left&space;(&space;y_{i}-t_{i}\right&space;)^2" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{1}^{n}\left&space;(&space;y_{i}-t_{i}\right&space;)^2" title="\frac{1}{n}\sum_{1}^{n}\left ( y_{i}-t_{i}\right )^2" /></a> | Gradient descent | <a href="https://www.codecogs.com/eqnedit.php?latex=W:=W-\alpha&space;\frac{\partial}{\partial&space;W}cost(W)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?W:=W-\alpha&space;\frac{\partial}{\partial&space;W}cost(W)" title="W:=W-\alpha \frac{\partial}{\partial W}cost(W)" /></a> |
