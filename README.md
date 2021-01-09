@@ -1,11 +1,11 @@
 # How To Optimize Single Object Image Classification Model Accuracy using Tensorflow 2
-*Last updated: 01/02/2021*
+*Last updated: 01/09/2021*
 
 <!-- using https://www.codecogs.com/latex/eqneditor.php -->
 Table : Comparative Analysis of Classification Accuracy 
-| index | activation function | loss function | Optimizer | learning rate | learning rate dacay | epoch | total loss | learning time | final accuracy |
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| 1 | Relu | mean square error(MSE) | Gradient descent | 0.01 | every 50, \*=0.96 |  |  |  | |
+| activation function | loss function | Optimizer | learning rate | learning rate dacay | epoch | total loss | learning time | final accuracy |
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Relu | mean square error(MSE) | Gradient descent | 0.01 | every 50, \*=0.96 | 100 | 0.001 | 2h | 98% |
 ||
 ||
 
