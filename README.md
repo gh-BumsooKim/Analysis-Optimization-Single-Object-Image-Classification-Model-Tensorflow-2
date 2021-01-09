@@ -1,5 +1,5 @@
 # How To Optimize Single Object Image Classification Model Accuracy using Tensorflow 2
-*Last updated: 01/09/2021*
+*Last updated: 01/10/2021*
 
 <!-- using https://www.codecogs.com/latex/eqneditor.php -->
 Table : Comparative Analysis of Classification Accuracy 
@@ -8,6 +8,13 @@ Table : Comparative Analysis of Classification Accuracy
 | Relu | MSE | Gradient descent | 0.01 | every 50, \*=0.96 | 100 | 0.001 | 2h | 98% |
 ||
 ||
+
+Table : Procedure
+| index | 1 | 2 | 3 |
+|:---:|:---:|:---:|:---:|
+| 1 | layer | normalization | activation function |
+| 2 | normalization | activation function | convolution layer |
+
 
 <br><hr><br>
 
@@ -35,9 +42,16 @@ Table : Weight Initialization
 <br>
 
 Table : Regularization
-| Regularization | notation | cdoe |
+| Regularization | notation | code |
 |:---:|:---:|:---:|
 | Dropout | Random Node Turn off | `tf.keras.layers.Dropout(rate)` (0.0<rate<1.0) |
 | L1 Regularization |
 | L2 Regularization |
 | Early stoppoing |
+
+<br>
+
+Table : Internal Covariate Shift Solution
+| Method | notation | code |
+|:---:|:---:|:---:|
+| Batch Normalization (Not use Dropout) | <img src="https://latex.codecogs.com/gif.latex?\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma&space;_{B}^{2}&plus;&space;\epsilon&space;}},&space;\hat{x}=\gamma&space;\bar{x}&plus;\beta" title="\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma _{B}^{2}+ \epsilon }}, \hat{x}=\gamma \bar{x}+\beta" /> | `tf.keras.layers.BatchNormalization()` | 
