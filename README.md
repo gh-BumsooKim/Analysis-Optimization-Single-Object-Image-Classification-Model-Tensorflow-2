@@ -5,7 +5,7 @@
 Table : Comparative Analysis of Classification Accuracy 
 | activation function | loss function | Optimizer | learning rate | learning rate dacay | epoch | total loss | learning time | final accuracy |
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| Relu | mean square error(MSE) | Gradient descent | 0.01 | every 50, \*=0.96 | 100 | 0.001 | 2h | 98% |
+| Relu | MSE | Gradient descent | 0.01 | every 50, \*=0.96 | 100 | 0.001 | 2h | 98% |
 ||
 ||
 
@@ -15,6 +15,7 @@ Table : Loss Functin and Optimizer Equation
 | activation function | activation equation | loss function | loss equation | Optimizer | Optimizer notation |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 | Relu | <img src="https://latex.codecogs.com/gif.latex?f(x)=max(0,x)" title="f(x)=max(0,x)" /> | MSE | <img src="https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{1}^{n}\left&space;(&space;y_{i}-t_{i}\right&space;)^2" title="\frac{1}{n}\sum_{1}^{n}\left ( y_{i}-t_{i}\right )^2" /> | Gradient descent | <img src="https://latex.codecogs.com/gif.latex?W:=W-\alpha&space;\frac{\partial}{\partial&space;W}cost(W)" title="W:=W-\alpha \frac{\partial}{\partial W}cost(W)" /> |
+| Leacky Relu | <img src="https://latex.codecogs.com/gif.latex?f(x)=max(\alpha&space;x,x)" title="f(x)=max(\alpha x,x)"/> |
 
 <!--
 Relu = https://www.codecogs.com/eqnedit.php?latex=f(x)=max(0,x)
