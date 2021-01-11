@@ -1,5 +1,5 @@
 # How To Optimize Single Object Image Classification Model Accuracy using Tensorflow 2
-*Last updated: 01/10/2021*
+*Last updated: 01/11/2021*
 
 <!-- using https://www.codecogs.com/latex/eqneditor.php -->
 Table : Comparative Analysis of Classification Accuracy 
@@ -21,8 +21,12 @@ Table : Procedure
 Table : Loss Functin and Optimizer Equation
 | activation function | activation equation | loss function | loss equation | Optimizer | Optimizer notation |
 |:---:|:---:|:---:|:---:|:---:|:---:|
+| Sigmoid |
 | Relu | <img src="https://latex.codecogs.com/gif.latex?f(x)=max(0,x)" title="f(x)=max(0,x)" /> | MSE | <img src="https://latex.codecogs.com/svg.latex?\frac{1}{n}\sum_{1}^{n}\left&space;(&space;y_{i}-t_{i}\right&space;)^2" title="\frac{1}{n}\sum_{1}^{n}\left ( y_{i}-t_{i}\right )^2" /> | Gradient descent | <img src="https://latex.codecogs.com/gif.latex?W:=W-\alpha&space;\frac{\partial}{\partial&space;W}cost(W)" title="W:=W-\alpha \frac{\partial}{\partial W}cost(W)" /> |
 | Leacky Relu | <img src="https://latex.codecogs.com/gif.latex?f(x)=max(\alpha&space;x,x)" title="f(x)=max(\alpha x,x)"/> |
+| ELU |
+| tanh |
+| maxout |
 
 <!--
 Relu = https://www.codecogs.com/eqnedit.php?latex=f(x)=max(0,x)
