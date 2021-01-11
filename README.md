@@ -18,6 +18,17 @@ Table : Procedure
 
 <br><hr><br>
 
+Table : Data Augmentation
+| Method | notation | code |
+|:---:|:---:|:---:|
+| Random erase |
+| Cutout |
+| MixUp |
+| CutMix |
+| Style transfer GAN |
+
+<br>
+
 Table : Loss Functin and Optimizer Equation
 | activation function | activation equation | loss function | loss equation | Optimizer | Optimizer notation |
 |:---:|:---:|:---:|:---:|:---:|:---:|
@@ -49,6 +60,7 @@ Table : Regularization
 | Regularization | notation | code |
 |:---:|:---:|:---:|
 | Dropout | Random Node Turn off | `tf.keras.layers.Dropout(rate)` (0.0<rate<1.0) |
+| Spatial Dropout | | `tf.keras.layers.SpatialDropout2D()`|
 | L1 Regularization |
 | L2 Regularization |
 | Early stoppoing |
