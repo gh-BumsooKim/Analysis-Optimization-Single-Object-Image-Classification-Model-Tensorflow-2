@@ -1,5 +1,5 @@
 # How To Optimize Single Object Image Classification Model Accuracy using Tensorflow 2
-*Last updated: 01/11/2021*
+*Last updated: 01/12/2021*
 
 <!-- using https://www.codecogs.com/latex/eqneditor.php -->
 Table : Comparative Analysis of Classification Accuracy 
@@ -26,6 +26,7 @@ Table : Data Augmentation
 | MixUp |
 | CutMix |
 | Style transfer GAN |
+| Mosaic |
 
 <br>
 
@@ -67,7 +68,11 @@ Table : Regularization
 
 <br>
 
-Table : Internal Covariate Shift Solution
+Table : Normalization - Internal Covariate Shift Solution
 | Method | notation | code |
 |:---:|:---:|:---:|
-| Batch Normalization (Not use Dropout) | <img src="https://latex.codecogs.com/gif.latex?\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma&space;_{B}^{2}&plus;&space;\epsilon&space;}},&space;\hat{x}=\gamma&space;\bar{x}&plus;\beta" title="\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma _{B}^{2}+ \epsilon }}, \hat{x}=\gamma \bar{x}+\beta" /> | `tf.keras.layers.BatchNormalization()` | 
+| Batch Normalization(BN) [Not use Dropout] | <img src="https://latex.codecogs.com/gif.latex?\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma&space;_{B}^{2}&plus;&space;\epsilon&space;}},&space;\hat{x}=\gamma&space;\bar{x}&plus;\beta" title="\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma _{B}^{2}+ \epsilon }}, \hat{x}=\gamma \bar{x}+\beta" /> | `tf.keras.layers.BatchNormalization()` |
+| Layer Normalization(LN) |
+| Instance Normalization(IN) |
+| Group Normalization(GN) [for small batch sizes] |
+| Switchable Normalization(SN) [for small batch sizes] |
