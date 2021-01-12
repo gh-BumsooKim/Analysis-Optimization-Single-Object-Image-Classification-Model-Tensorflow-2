@@ -27,6 +27,7 @@ Table : Data Augmentation
 | CutMix |
 | Style transfer GAN |
 | Mosaic |
+| Random Croping | | `tf.keras.layers.experimental.preprocessing.RandomCrop()` <br> `tf.image.random_crop()` |
 
 <br>
 
@@ -61,6 +62,7 @@ Table : Regularization
 | Regularization | notation | code |
 |:---:|:---:|:---:|
 | Dropout | Random Node Turn off | `tf.keras.layers.Dropout(rate)` (0.0<rate<1.0) |
+| DropBlock |
 | Spatial Dropout | | `tf.keras.layers.SpatialDropout2D()`|
 | L1 Regularization |
 | L2 Regularization |
