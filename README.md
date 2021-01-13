@@ -62,11 +62,11 @@ Table : Regularization
 | Regularization | notation | code |
 |:---:|:---:|:---:|
 | Dropout | Random Node Turn off | `tf.keras.layers.Dropout(rate)` (0.0<rate<1.0) |
-| DropBlock |
+| DropBlock (for CNN) | drop range of features |
 | Spatial Dropout | | `tf.keras.layers.SpatialDropout2D()`|
 | L1 Regularization |
 | L2 Regularization |
-| Early stoppoing |
+| Early stoppoing | stop epoch training | `tf.keras.callbacks.EarlyStopping()`|
 
 <br>
 
