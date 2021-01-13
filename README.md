@@ -74,7 +74,7 @@ Table : Normalization - Internal Covariate Shift Solution
 | Method | notation | code |
 |:---:|:---:|:---:|
 | Batch Normalization(BN) [Not use Dropout] | <img src="https://latex.codecogs.com/gif.latex?\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma&space;_{B}^{2}&plus;&space;\epsilon&space;}},&space;\hat{x}=\gamma&space;\bar{x}&plus;\beta" title="\bar{x}=\frac{x-\mu_B}{\sqrt{\sigma _{B}^{2}+ \epsilon }}, \hat{x}=\gamma \bar{x}+\beta" /> | `tf.keras.layers.BatchNormalization()` |
-| Layer Normalization(LN) |
+| Layer Normalization(LN) | | `tf.keras.layers.LayerNormalization()` |
 | Instance Normalization(IN) |
 | Group Normalization(GN) [for small batch sizes] |
 | Switchable Normalization(SN) [for small batch sizes] |
