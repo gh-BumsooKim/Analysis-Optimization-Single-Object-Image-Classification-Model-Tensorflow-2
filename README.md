@@ -62,6 +62,7 @@ Table : Regularization
 | Regularization | notation | code |
 |:---:|:---:|:---:|
 | Dropout | Random Node Turn off | `tf.keras.layers.Dropout(rate)` (0.0<rate<1.0) |
+| GaussianDropout | sqrt(rate / (1 - rate)) | `tf.keras.layers.GaussianDropout(rate)` |
 | DropBlock (for CNN) | drop range of features |
 | Spatial Dropout | | `tf.keras.layers.SpatialDropout2D()`|
 | L1 Regularization |
